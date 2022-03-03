@@ -121,9 +121,9 @@ pusher:
 
   # Env front
   env: 
-  OpidClientId: ""
-  OpidClientSecret: ""
-  OpidClientIssuer: ""
+    opidClientId:
+    opidClientSecret:
+    opidClientIssuer:
 
   extraEnvs: 
     - name: KEY
