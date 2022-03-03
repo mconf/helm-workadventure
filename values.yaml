@@ -119,7 +119,7 @@ pusher:
     repository: "thecodingmachine/workadventure-pusher"
     pullPolicy: IfNotPresent
 
-  # Env front
+  # Env pusher
   env: 
     opidClientId:
     opidClientSecret:
