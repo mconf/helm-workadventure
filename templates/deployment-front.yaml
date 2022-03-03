@@ -77,7 +77,7 @@ spec:
             - name: 'OPID_LOGIN_SCREEN_PROVIDER'
               value: "{{ include."workadventure.domain"  . }} + login-screen
             - name: 'DISABLE_ANONYMOUS'
-              value: "true"
+              value: "{{- .Values.env.disableAnonymous -}}"
             - name: 'ICON_URL'
               value: "{{ .Values.front.env.iconUrl -}}"       
             {{ toYaml .Values.front.extraEnvs | nindent 12 }}
