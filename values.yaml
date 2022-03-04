@@ -20,6 +20,7 @@ env:
   secretJitsiKey: ""
   jitsiPrivateMode: false
   debugMode: false
+  disableAnonymous: false
 
 #################### workadventure-back ####################
 back:
