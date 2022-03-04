@@ -78,8 +78,6 @@ spec:
               value: {{ include "workadventure.pusher.loginScreen" . }}
             - name: 'DISABLE_ANONYMOUS'
               value: "{{- .Values.env.disableAnonymous -}}"
-            - name: 'ICON_URL'
-              value: "{{ .Values.front.env.iconUrl -}}"       
             {{ toYaml .Values.front.extraEnvs | nindent 12 }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
