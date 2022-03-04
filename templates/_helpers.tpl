@@ -125,10 +125,3 @@ Maps object names
 {{- $universe := .Values.front.env.startRoomUniverse }}
 {{- printf "/_/%s/%s%s" $universe (include "workadventure.mapsUrl" .) $path }}
 {{- end }}
-
-{{/*
-Icon object names
-*/}}
-{{- define "workadventure.icon.name" -}}
-{{- printf "%s-%s" (include "workadventure.fullname" .) .Values.icon.name | trunc 63 | trimSuffix "-" }}
-{{- end }}
