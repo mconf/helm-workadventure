@@ -110,6 +110,13 @@ Maps object names
 
 {{- define "workadventure.frontUrl" -}}
 {{- printf "//%s.%s" .Values.front.env.name .Values.domain }}
+<<<<<<< HEAD
+=======
+{{- end }}
+
+{{- define "workadventure.pusher.loginScreen" -}}
+{{- printf "//%s/%s" (include "workadventure.pusherUrl" .) "login-screen" }}
+>>>>>>> a3868a2760b9eb5fdfc8616c340da75dcc9de5e9
 {{- end }}
 
 {{- define "workadventure.pusher.apiUrl" -}}
